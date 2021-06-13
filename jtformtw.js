@@ -8,8 +8,7 @@ function jtForm() {
     var data = JSON.parse(wrapper.dataset.data);
     var holder = document.createElement('div');
     holder.innerHTML = `
-   <style>
-   /*! tailwindcss v2.1.4 | MIT License | https://tailwindcss.com */
+   <style>/*! tailwindcss v2.1.4 | MIT License | https://tailwindcss.com */
 
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
@@ -395,246 +394,246 @@ svg {
  * https://github.com/mozdevs/cssremedy/issues/14
  */
 
-.container {
+.container{
   width: 100%;
 }
 
-@media (min-width: 640px) {
-  .container {
+@media (min-width: 640px){
+  .container{
     max-width: 640px;
   }
 }
 
-@media (min-width: 768px) {
-  .container {
+@media (min-width: 768px){
+  .container{
     max-width: 768px;
   }
 }
 
-@media (min-width: 1024px) {
-  .container {
+@media (min-width: 1024px){
+  .container{
     max-width: 1024px;
   }
 }
 
-@media (min-width: 1280px) {
-  .container {
+@media (min-width: 1280px){
+  .container{
     max-width: 1280px;
   }
 }
 
-@media (min-width: 1536px) {
-  .container {
+@media (min-width: 1536px){
+  .container{
     max-width: 1536px;
   }
 }
 
-.space-y-6 > :not([hidden]) ~ :not([hidden]) {
+#jtform-wrapper .space-y-6 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 }
 
-.appearance-none {
+#jtform-wrapper .appearance-none{
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
 }
 
-.bg-white {
+#jtform-wrapper .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
 }
 
-.bg-gray-50 {
+#jtform-wrapper .bg-gray-50{
   --tw-bg-opacity: 1;
   background-color: rgba(249, 250, 251, var(--tw-bg-opacity));
 }
 
-.bg-yellow-50 {
+#jtform-wrapper .bg-yellow-50{
   --tw-bg-opacity: 1;
   background-color: rgba(255, 251, 235, var(--tw-bg-opacity));
 }
 
-.bg-green-50 {
+#jtform-wrapper .bg-green-50{
   --tw-bg-opacity: 1;
   background-color: rgba(236, 253, 245, var(--tw-bg-opacity));
 }
 
-.bg-indigo-600 {
+#jtform-wrapper .bg-indigo-600{
   --tw-bg-opacity: 1;
   background-color: rgba(79, 70, 229, var(--tw-bg-opacity));
 }
 
-.hover\\:bg-indigo-700:hover {
+#jtform-wrapper .hover\\:bg-indigo-700:hover{
   --tw-bg-opacity: 1;
   background-color: rgba(67, 56, 202, var(--tw-bg-opacity));
 }
 
-.border-transparent {
+#jtform-wrapper .border-transparent{
   border-color: transparent;
 }
 
-.border-gray-300 {
+#jtform-wrapper .border-gray-300{
   --tw-border-opacity: 1;
   border-color: rgba(209, 213, 219, var(--tw-border-opacity));
 }
 
-.focus\\:border-indigo-500:focus {
+#jtform-wrapper .focus\\:border-indigo-500:focus{
   --tw-border-opacity: 1;
   border-color: rgba(99, 102, 241, var(--tw-border-opacity));
 }
 
-.rounded-md {
+#jtform-wrapper .rounded-md{
   border-radius: 0.375rem;
 }
 
-.border {
+#jtform-wrapper .border{
   border-width: 1px;
 }
 
-.block {
+#jtform-wrapper .block{
   display: block;
 }
 
-.flex {
+#jtform-wrapper .flex{
   display: flex;
 }
 
-.hidden {
+#jtform-wrapper .hidden{
   display: none;
 }
 
-.flex-col {
+#jtform-wrapper .flex-col{
   flex-direction: column;
 }
 
-.justify-center {
+#jtform-wrapper .justify-center{
   justify-content: center;
 }
 
-.flex-shrink-0 {
+#jtform-wrapper .flex-shrink-0{
   flex-shrink: 0;
 }
 
-.font-medium {
+#jtform-wrapper .font-medium{
   font-weight: 500;
 }
 
-.font-extrabold {
+#jtform-wrapper .font-extrabold{
   font-weight: 800;
 }
 
-.h-5 {
+#jtform-wrapper .h-5{
   height: 1.25rem;
 }
 
-.text-sm {
+#jtform-wrapper .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
 
-.text-3xl {
+#jtform-wrapper .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
 
-.mt-1 {
+#jtform-wrapper .mt-1{
   margin-top: 0.25rem;
 }
 
-.mt-2 {
+#jtform-wrapper .mt-2{
   margin-top: 0.5rem;
 }
 
-.ml-3 {
+#jtform-wrapper .ml-3{
   margin-left: 0.75rem;
 }
 
-.mb-4 {
+#jtform-wrapper .mb-4{
   margin-bottom: 1rem;
 }
 
-.mt-6 {
+#jtform-wrapper .mt-6{
   margin-top: 1.5rem;
 }
 
-.mt-8 {
+#jtform-wrapper .mt-8{
   margin-top: 2rem;
 }
 
-.min-h-screen {
+#jtform-wrapper .min-h-screen{
   min-height: 100vh;
 }
 
-.disabled\\:opacity-50:disabled {
+#jtform-wrapper .disabled\\:opacity-50:disabled{
   opacity: 0.5;
 }
 
-.focus\\:outline-none:focus {
+#jtform-wrapper .focus\\:outline-none:focus{
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
 
-.p-4 {
+#jtform-wrapper .p-4{
   padding: 1rem;
 }
 
-.py-2 {
+#jtform-wrapper .py-2{
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
 
-.px-3 {
+#jtform-wrapper .px-3{
   padding-left: 0.75rem;
   padding-right: 0.75rem;
 }
 
-.px-4 {
+#jtform-wrapper .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
-.py-8 {
+#jtform-wrapper .py-8{
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
-.py-12 {
+#jtform-wrapper .py-12{
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
-.placeholder-gray-400::-moz-placeholder {
+#jtform-wrapper .placeholder-gray-400::-moz-placeholder{
   --tw-placeholder-opacity: 1;
   color: rgba(156, 163, 175, var(--tw-placeholder-opacity));
 }
 
-.placeholder-gray-400:-ms-input-placeholder {
+#jtform-wrapper .placeholder-gray-400:-ms-input-placeholder{
   --tw-placeholder-opacity: 1;
   color: rgba(156, 163, 175, var(--tw-placeholder-opacity));
 }
 
-.placeholder-gray-400::placeholder {
+#jtform-wrapper .placeholder-gray-400::placeholder{
   --tw-placeholder-opacity: 1;
   color: rgba(156, 163, 175, var(--tw-placeholder-opacity));
 }
 
-* {
+*{
   --tw-shadow: 0 0 #0000;
 }
 
-.shadow-sm {
+#jtform-wrapper .shadow-sm{
   --tw-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.shadow {
+#jtform-wrapper .shadow{
   --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-* {
+*{
   --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
   --tw-ring-offset-width: 0px;
   --tw-ring-offset-color: #fff;
@@ -643,182 +642,181 @@ svg {
   --tw-ring-shadow: 0 0 #0000;
 }
 
-.focus\\:ring-2:focus {
+#jtform-wrapper .focus\\:ring-2:focus{
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 
-.focus\\:ring-offset-2:focus {
+#jtform-wrapper .focus\\:ring-offset-2:focus{
   --tw-ring-offset-width: 2px;
 }
 
-.focus\\:ring-indigo-500:focus {
+#jtform-wrapper .focus\\:ring-indigo-500:focus{
   --tw-ring-opacity: 1;
   --tw-ring-color: rgba(99, 102, 241, var(--tw-ring-opacity));
 }
 
-.text-center {
+#jtform-wrapper .text-center{
   text-align: center;
 }
 
-.text-white {
+#jtform-wrapper .text-white{
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
-.text-gray-700 {
+#jtform-wrapper .text-gray-700{
   --tw-text-opacity: 1;
   color: rgba(55, 65, 81, var(--tw-text-opacity));
 }
 
-.text-gray-900 {
+#jtform-wrapper .text-gray-900{
   --tw-text-opacity: 1;
   color: rgba(17, 24, 39, var(--tw-text-opacity));
 }
 
-.text-yellow-400 {
+#jtform-wrapper .text-yellow-400{
   --tw-text-opacity: 1;
   color: rgba(251, 191, 36, var(--tw-text-opacity));
 }
 
-.text-yellow-700 {
+#jtform-wrapper .text-yellow-700{
   --tw-text-opacity: 1;
   color: rgba(180, 83, 9, var(--tw-text-opacity));
 }
 
-.text-yellow-800 {
+#jtform-wrapper .text-yellow-800{
   --tw-text-opacity: 1;
   color: rgba(146, 64, 14, var(--tw-text-opacity));
 }
 
-.text-green-400 {
+#jtform-wrapper .text-green-400{
   --tw-text-opacity: 1;
   color: rgba(52, 211, 153, var(--tw-text-opacity));
 }
 
-.text-green-800 {
+#jtform-wrapper .text-green-800{
   --tw-text-opacity: 1;
   color: rgba(6, 95, 70, var(--tw-text-opacity));
 }
 
-.w-5 {
+#jtform-wrapper .w-5{
   width: 1.25rem;
 }
 
-.w-full {
+#jtform-wrapper .w-full{
   width: 100%;
 }
 
-@-webkit-keyframes spin {
-  to {
+@-webkit-keyframes spin{
+  to{
     transform: rotate(360deg);
   }
 }
 
-@keyframes spin {
-  to {
+@keyframes spin{
+  to{
     transform: rotate(360deg);
   }
 }
 
-@-webkit-keyframes ping {
-  75%, 100% {
+@-webkit-keyframes ping{
+  75%, 100%{
     transform: scale(2);
     opacity: 0;
   }
 }
 
-@keyframes ping {
-  75%, 100% {
+@keyframes ping{
+  75%, 100%{
     transform: scale(2);
     opacity: 0;
   }
 }
 
-@-webkit-keyframes pulse {
-  50% {
+@-webkit-keyframes pulse{
+  50%{
     opacity: .5;
   }
 }
 
-@keyframes pulse {
-  50% {
+@keyframes pulse{
+  50%{
     opacity: .5;
   }
 }
 
-@-webkit-keyframes bounce {
-  0%, 100% {
+@-webkit-keyframes bounce{
+  0%, 100%{
     transform: translateY(-25%);
     -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
             animation-timing-function: cubic-bezier(0.8,0,1,1);
   }
 
-  50% {
+  50%{
     transform: none;
     -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
             animation-timing-function: cubic-bezier(0,0,0.2,1);
   }
 }
 
-@keyframes bounce {
-  0%, 100% {
+@keyframes bounce{
+  0%, 100%{
     transform: translateY(-25%);
     -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
             animation-timing-function: cubic-bezier(0.8,0,1,1);
   }
 
-  50% {
+  50%{
     transform: none;
     -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
             animation-timing-function: cubic-bezier(0,0,0.2,1);
   }
 }
 
-@media (min-width: 640px) {
+@media (min-width: 640px){
 
-  .sm\\:rounded-lg {
+  #jtform-wrapper .sm\\:rounded-lg{
     border-radius: 0.5rem;
   }
 
-  .sm\\:text-sm {
+  #jtform-wrapper .sm\\:text-sm{
     font-size: 0.875rem;
     line-height: 1.25rem;
   }
 
-  .sm\\:mx-auto {
+  #jtform-wrapper .sm\\:mx-auto{
     margin-left: auto;
     margin-right: auto;
   }
 
-  .sm\\:max-w-md {
+  #jtform-wrapper .sm\\:max-w-md{
     max-width: 28rem;
   }
 
-  .sm\\:px-6 {
+  #jtform-wrapper .sm\\:px-6{
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
 
-  .sm\\:px-10 {
+  #jtform-wrapper .sm\\:px-10{
     padding-left: 2.5rem;
     padding-right: 2.5rem;
   }
 
-  .sm\\:w-full {
+  #jtform-wrapper .sm\\:w-full{
     width: 100%;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px){
 
-  .lg\\:px-8 {
+  #jtform-wrapper .lg\\:px-8{
     padding-left: 2rem;
     padding-right: 2rem;
   }
-}
-</style>
+}</style>
     <div class="container">
     <div class="sm:mx-auto sm:w-full sm:max-w-md">
         <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
