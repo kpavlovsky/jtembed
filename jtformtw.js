@@ -7,7 +7,6 @@ function jtForm() {
     }
     var data = JSON.parse(wrapper.dataset.data);
     var holder = document.createElement('div');
-    var actionUrl = data.action;
     holder.innerHTML = `
    <style>/*! tailwindcss v2.1.4 | MIT License | https://tailwindcss.com */
 
@@ -785,7 +784,7 @@ svg {
 
     </div>
 
-    <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
+    <div class="mt-8 mb-4 sm:mx-auto sm:w-full sm:max-w-md">
         <div class="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
             <div class="rounded-md bg-yellow-50 p-4 hidden jt-error">
                 <div class="flex">
@@ -886,7 +885,7 @@ svg {
 
                 <div>
                     <button type="submit"
-                            class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                            class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 disabled:opacity-50">
                         Submit Request
                     </button>
                 </div>
@@ -899,6 +898,7 @@ svg {
     `;
     var form = holder.querySelector('form');
     form.addEventListener('submit', function (event) {
+        form.querySelector('button').setAttribute('disabled', 'disabled');
         event.preventDefault();
         console.log(event.target);
         console.log(Object.fromEntries(new FormData(event.target)));
@@ -916,11 +916,13 @@ svg {
         }).then(function (data) {
             document.querySelector('#jtform-wrapper').querySelector('.jt-success').classList.remove('hidden');
             document.querySelector('#jtform-wrapper').querySelector('.jt-error').classList.add('hidden');
+
             form.classList.add('hidden');
             console.log(data);
         }).catch(function (error) {
             document.querySelector('#jtform-wrapper').querySelector('.jt-success').classList.add('hidden');
             document.querySelector('#jtform-wrapper').querySelector('.jt-error').classList.remove('hidden');
+            form.querySelector('button').removeAttribute('disabled');
             console.warn(error);
         });
 
