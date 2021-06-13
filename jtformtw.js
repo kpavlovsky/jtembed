@@ -914,12 +914,12 @@ svg {
             }
             return Promise.reject(response);
         }).then(function (data) {
-            form.querySelector('.jt-success').classList.remove('hidden');
-            form.querySelector('.jt-error').classList.add('hidden');
+            document.querySelector('#jtform-wrapper').querySelector('.jt-success').classList.remove('hidden');
+            document.querySelector('#jtform-wrapper').querySelector('.jt-error').classList.add('hidden');
             console.log(data);
         }).catch(function (error) {
-            form.querySelector('.jt-success').classList.add('hidden');
-            form.querySelector('.jt-error').classList.remove('hidden');
+            document.querySelector('#jtform-wrapper').querySelector('.jt-success').classList.add('hidden');
+            document.querySelector('#jtform-wrapper').querySelector('.jt-error').classList.remove('hidden');
             console.warn(error);
         });
 
