@@ -432,11 +432,6 @@ svg {
   background-color: rgba(79, 70, 229, var(--tw-bg-opacity));
 }
 
-.hover\\:bg-green-100:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgba(209, 250, 229, var(--tw-bg-opacity));
-}
-
 .hover\\:bg-indigo-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgba(67, 56, 202, var(--tw-bg-opacity));
@@ -470,6 +465,10 @@ svg {
 
 .flex {
   display: flex;
+}
+
+.hidden {
+  display: none;
 }
 
 .flex-col {
@@ -506,16 +505,6 @@ svg {
   line-height: 2.25rem;
 }
 
-.-my-1 {
-  margin-top: -0.25rem;
-  margin-bottom: -0.25rem;
-}
-
-.-mx-2 {
-  margin-left: -0.5rem;
-  margin-right: -0.5rem;
-}
-
 .mt-1 {
   margin-top: 0.25rem;
 }
@@ -526,10 +515,6 @@ svg {
 
 .ml-3 {
   margin-left: 0.75rem;
-}
-
-.mt-4 {
-  margin-top: 1rem;
 }
 
 .mt-6 {
@@ -553,19 +538,9 @@ svg {
   padding: 1rem;
 }
 
-.py-1 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-}
-
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-}
-
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
 }
 
 .px-3 {
@@ -632,17 +607,8 @@ svg {
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 
-.focus\\:ring-offset-green-50:focus {
-  --tw-ring-offset-color: #ecfdf5;
-}
-
 .focus\\:ring-offset-2:focus {
   --tw-ring-offset-width: 2px;
-}
-
-.focus\\:ring-green-600:focus {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgba(5, 150, 105, var(--tw-ring-opacity));
 }
 
 .focus\\:ring-indigo-500:focus {
@@ -687,11 +653,6 @@ svg {
 .text-green-400 {
   --tw-text-opacity: 1;
   color: rgba(52, 211, 153, var(--tw-text-opacity));
-}
-
-.text-green-700 {
-  --tw-text-opacity: 1;
-  color: rgba(4, 120, 87, var(--tw-text-opacity));
 }
 
 .text-green-800 {
@@ -814,7 +775,8 @@ svg {
     padding-left: 2rem;
     padding-right: 2rem;
   }
-}</style>
+}
+</style>
 <div class="container"><div class="sm:mx-auto sm:w-full sm:max-w-md">
         <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
             Send a request
@@ -825,7 +787,8 @@ svg {
     <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
 
         <div class="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
-            <div class="rounded-md bg-yellow-50 p-4">
+        
+            <div class="rounded-md bg-yellow-50 p-4 hidden">
                 <div class="flex">
                     <div class="flex-shrink-0">
                         <!-- Heroicon name: solid/exclamation -->
@@ -848,8 +811,9 @@ svg {
                     </div>
                 </div>
             </div>
+            
             <!-- This example requires Tailwind CSS v2.0+ -->
-            <div class="rounded-md bg-green-50 p-4">
+            <div class="rounded-md bg-green-50 p-4 hidden">
                 <div class="flex">
                     <div class="flex-shrink-0">
                         <!-- Heroicon name: solid/check-circle -->
@@ -868,6 +832,7 @@ svg {
                     </div>
                 </div>
             </div>
+            
             <form class="space-y-6" method="post" action="${data.actionUrl}">
                 <div>
                     <label for="jtNameInput" class="block text-sm font-medium text-gray-700">
