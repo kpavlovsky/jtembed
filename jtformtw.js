@@ -916,6 +916,7 @@ svg {
         }).then(function (data) {
             document.querySelector('#jtform-wrapper').querySelector('.jt-success').classList.remove('hidden');
             document.querySelector('#jtform-wrapper').querySelector('.jt-error').classList.add('hidden');
+            form.classList.add('hidden');
             console.log(data);
         }).catch(function (error) {
             document.querySelector('#jtform-wrapper').querySelector('.jt-success').classList.add('hidden');
