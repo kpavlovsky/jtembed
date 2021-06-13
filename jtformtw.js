@@ -8,7 +8,8 @@ function jtForm() {
     var data = JSON.parse(wrapper.dataset.data);
     var holder = document.createElement('div');
     holder.innerHTML = `
-   <style>/*! tailwindcss v2.1.4 | MIT License | https://tailwindcss.com */
+   <style>
+   /*! tailwindcss v2.1.4 | MIT License | https://tailwindcss.com */
 
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
@@ -394,6 +395,40 @@ svg {
  * https://github.com/mozdevs/cssremedy/issues/14
  */
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
 .space-y-6 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
@@ -516,6 +551,10 @@ svg {
   margin-left: 0.75rem;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
 .mt-6 {
   margin-top: 1.5rem;
 }
@@ -526,6 +565,10 @@ svg {
 
 .min-h-screen {
   min-height: 100vh;
+}
+
+.disabled\\:opacity-50:disabled {
+  opacity: 0.5;
 }
 
 .focus\\:outline-none:focus {
