@@ -777,7 +777,8 @@ svg {
   }
 }
 </style>
-<div class="container"><div class="sm:mx-auto sm:w-full sm:max-w-md">
+    <div class="container">
+    <div class="sm:mx-auto sm:w-full sm:max-w-md">
         <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
             Send a request
         </h2>
@@ -785,10 +786,8 @@ svg {
     </div>
 
     <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
-
         <div class="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
-        
-            <div class="rounded-md bg-yellow-50 p-4 hidden">
+            <div class="rounded-md bg-yellow-50 p-4 hidden jt-error">
                 <div class="flex">
                     <div class="flex-shrink-0">
                         <!-- Heroicon name: solid/exclamation -->
@@ -813,7 +812,7 @@ svg {
             </div>
             
             <!-- This example requires Tailwind CSS v2.0+ -->
-            <div class="rounded-md bg-green-50 p-4 hidden">
+            <div class="rounded-md bg-green-50 p-4 hidden jt-success">
                 <div class="flex">
                     <div class="flex-shrink-0">
                         <!-- Heroicon name: solid/check-circle -->
@@ -915,8 +914,12 @@ svg {
             }
             return Promise.reject(response);
         }).then(function (data) {
+            form.querySelector('.jt-success').classList.remove('hidden');
+            form.querySelector('.jt-error').classList.add('hidden');
             console.log(data);
         }).catch(function (error) {
+            form.querySelector('.jt-success').classList.add('hidden');
+            form.querySelector('.jt-error').classList.remove('hidden');
             console.warn(error);
         });
 
