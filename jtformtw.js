@@ -8,7 +8,8 @@ function jtForm() {
     var data = JSON.parse(wrapper.dataset.data);
     var holder = document.createElement('div');
     holder.innerHTML = `
-   <style>/*! tailwindcss v2.1.4 | MIT License | https://tailwindcss.com */
+   <style>
+   /*! tailwindcss v2.1.4 | MIT License | https://tailwindcss.com */
 
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
@@ -21,9 +22,7 @@ Document
 Use a better box model (opinionated).
 */
 
-*,
-::before,
-::after {
+#jtform-wrapper *, #jtform-wrapper ::before, #jtform-wrapper ::after {
   box-sizing: border-box;
 }
 
@@ -31,7 +30,7 @@ Use a better box model (opinionated).
 Use a more readable tab size (opinionated).
 */
 
-html {
+#jtform-wrapper .html {
   -moz-tab-size: 4;
   -o-tab-size: 4;
      tab-size: 4;
@@ -42,7 +41,7 @@ html {
 2. Prevent adjustments of font size after orientation changes in iOS.
 */
 
-html {
+#jtform-wrapper .html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
@@ -56,7 +55,7 @@ Sections
 Remove the margin in all browsers.
 */
 
-body {
+#jtform-wrapper .body {
   margin: 0;
 }
 
@@ -64,7 +63,7 @@ body {
 Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
 */
 
-body {
+#jtform-wrapper .body {
   font-family:
 \t\tsystem-ui,
 \t\t-apple-system, /* Firefox supports this but not yet \`system-ui\` */
@@ -133,8 +132,7 @@ Forms
 2. Remove the margin in Firefox and Safari.
 */
 
-button,
-input {
+#jtform-wrapper button, #jtform-wrapper input {
   font-family: inherit; /* 1 */
   font-size: 100%; /* 1 */
   line-height: 1.15; /* 1 */
@@ -146,7 +144,7 @@ Remove the inheritance of text transform in Edge and Firefox.
 1. Remove the inheritance of text transform in Firefox.
 */
 
-button { /* 1 */
+#jtform-wrapper button { /* 1 */
   text-transform: none;
 }
 
@@ -154,9 +152,7 @@ button { /* 1 */
 Correct the inability to style clickable types in iOS and Safari.
 */
 
-button,
-[type='button'],
-[type='submit'] {
+#jtform-wrapper button, #jtform-wrapper [type='button'], #jtform-wrapper [type='submit'] {
   -webkit-appearance: button;
 }
 
@@ -218,14 +214,11 @@ Add the correct display in Chrome and Safari.
  * Removes the default spacing and border for appropriate elements.
  */
 
-
-h2,
-h3,
-p {
+#jtform-wrapper h2, #jtform-wrapper h3, #jtform-wrapper p {
   margin: 0;
 }
 
-button {
+#jtform-wrapper button {
   background-color: transparent;
   background-image: none;
 }
@@ -235,7 +228,7 @@ button {
  * results in a loss of the default \`button\` focus styles.
  */
 
-button:focus {
+#jtform-wrapper button:focus {
   outline: 1px dotted;
   outline: 5px auto -webkit-focus-ring-color;
 }
@@ -251,7 +244,7 @@ button:focus {
  *    to override it to ensure consistency even when using the default theme.
  */
 
-html {
+#jtform-wrapper .html {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 1 */
   line-height: 1.5; /* 2 */
 }
@@ -261,7 +254,7 @@ html {
  * a class directly on the \`html\` element.
  */
 
-body {
+#jtform-wrapper .body {
   font-family: inherit;
   line-height: inherit;
 }
@@ -292,9 +285,7 @@ body {
  *    https://github.com/tailwindcss/tailwindcss/pull/116
  */
 
-*,
-::before,
-::after {
+#jtform-wrapper *, #jtform-wrapper ::before, #jtform-wrapper ::after {
   box-sizing: border-box; /* 1 */
   border-width: 0; /* 2 */
   border-style: solid; /* 2 */
@@ -315,28 +306,26 @@ body {
  * https://github.com/tailwindcss/tailwindcss/issues/362
  */
 
-input::-moz-placeholder {
+#jtform-wrapper input::-moz-placeholder {
   opacity: 1;
   color: #9ca3af;
 }
 
-input:-ms-input-placeholder {
+#jtform-wrapper input:-ms-input-placeholder {
   opacity: 1;
   color: #9ca3af;
 }
 
-input::placeholder {
+#jtform-wrapper input::placeholder {
   opacity: 1;
   color: #9ca3af;
 }
 
-button {
+#jtform-wrapper button {
   cursor: pointer;
 }
 
-
-h2,
-h3 {
+#jtform-wrapper h2, #jtform-wrapper h3 {
   font-size: inherit;
   font-weight: inherit;
 }
@@ -346,7 +335,7 @@ h3 {
  * opt-out.
  */
 
-a {
+#jtform-wrapper a {
   color: inherit;
   text-decoration: inherit;
 }
@@ -359,8 +348,7 @@ a {
  * normalize.css.
  */
 
-button,
-input {
+#jtform-wrapper button, #jtform-wrapper input {
   padding: 0;
   line-height: inherit;
   color: inherit;
@@ -381,8 +369,7 @@ input {
  * https://github.com/mozdevs/cssremedy/issues/14
  */
 
-
-svg {
+#jtform-wrapper svg {
   display: block;
   vertical-align: middle;
 }
@@ -394,246 +381,246 @@ svg {
  * https://github.com/mozdevs/cssremedy/issues/14
  */
 
-.container{
+#jtform-wrapper .container {
   width: 100%;
 }
 
-@media (min-width: 640px){
-  .container{
+@media (min-width: 640px) {
+  #jtform-wrapper .container {
     max-width: 640px;
   }
 }
 
-@media (min-width: 768px){
-  .container{
+@media (min-width: 768px) {
+  #jtform-wrapper .container {
     max-width: 768px;
   }
 }
 
-@media (min-width: 1024px){
-  .container{
+@media (min-width: 1024px) {
+  #jtform-wrapper .container {
     max-width: 1024px;
   }
 }
 
-@media (min-width: 1280px){
-  .container{
+@media (min-width: 1280px) {
+  #jtform-wrapper .container {
     max-width: 1280px;
   }
 }
 
-@media (min-width: 1536px){
-  .container{
+@media (min-width: 1536px) {
+  #jtform-wrapper .container {
     max-width: 1536px;
   }
 }
 
-#jtform-wrapper .space-y-6 > :not([hidden]) ~ :not([hidden]){
+#jtform-wrapper .space-y-6 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 }
 
-#jtform-wrapper .appearance-none{
+#jtform-wrapper .appearance-none {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
 }
 
-#jtform-wrapper .bg-white{
+#jtform-wrapper .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
 }
 
-#jtform-wrapper .bg-gray-50{
+#jtform-wrapper .bg-gray-50 {
   --tw-bg-opacity: 1;
   background-color: rgba(249, 250, 251, var(--tw-bg-opacity));
 }
 
-#jtform-wrapper .bg-yellow-50{
+#jtform-wrapper .bg-yellow-50 {
   --tw-bg-opacity: 1;
   background-color: rgba(255, 251, 235, var(--tw-bg-opacity));
 }
 
-#jtform-wrapper .bg-green-50{
+#jtform-wrapper .bg-green-50 {
   --tw-bg-opacity: 1;
   background-color: rgba(236, 253, 245, var(--tw-bg-opacity));
 }
 
-#jtform-wrapper .bg-indigo-600{
+#jtform-wrapper .bg-indigo-600 {
   --tw-bg-opacity: 1;
   background-color: rgba(79, 70, 229, var(--tw-bg-opacity));
 }
 
-#jtform-wrapper .hover\\:bg-indigo-700:hover{
+#jtform-wrapper .hover\\:bg-indigo-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgba(67, 56, 202, var(--tw-bg-opacity));
 }
 
-#jtform-wrapper .border-transparent{
+#jtform-wrapper .border-transparent {
   border-color: transparent;
 }
 
-#jtform-wrapper .border-gray-300{
+#jtform-wrapper .border-gray-300 {
   --tw-border-opacity: 1;
   border-color: rgba(209, 213, 219, var(--tw-border-opacity));
 }
 
-#jtform-wrapper .focus\\:border-indigo-500:focus{
+#jtform-wrapper .focus\\:border-indigo-500:focus {
   --tw-border-opacity: 1;
   border-color: rgba(99, 102, 241, var(--tw-border-opacity));
 }
 
-#jtform-wrapper .rounded-md{
+#jtform-wrapper .rounded-md {
   border-radius: 0.375rem;
 }
 
-#jtform-wrapper .border{
+#jtform-wrapper .border {
   border-width: 1px;
 }
 
-#jtform-wrapper .block{
+#jtform-wrapper .block {
   display: block;
 }
 
-#jtform-wrapper .flex{
+#jtform-wrapper .flex {
   display: flex;
 }
 
-#jtform-wrapper .hidden{
+#jtform-wrapper .hidden {
   display: none;
 }
 
-#jtform-wrapper .flex-col{
+#jtform-wrapper .flex-col {
   flex-direction: column;
 }
 
-#jtform-wrapper .justify-center{
+#jtform-wrapper .justify-center {
   justify-content: center;
 }
 
-#jtform-wrapper .flex-shrink-0{
+#jtform-wrapper .flex-shrink-0 {
   flex-shrink: 0;
 }
 
-#jtform-wrapper .font-medium{
+#jtform-wrapper .font-medium {
   font-weight: 500;
 }
 
-#jtform-wrapper .font-extrabold{
+#jtform-wrapper .font-extrabold {
   font-weight: 800;
 }
 
-#jtform-wrapper .h-5{
+#jtform-wrapper .h-5 {
   height: 1.25rem;
 }
 
-#jtform-wrapper .text-sm{
+#jtform-wrapper .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
 
-#jtform-wrapper .text-3xl{
+#jtform-wrapper .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
 
-#jtform-wrapper .mt-1{
+#jtform-wrapper .mt-1 {
   margin-top: 0.25rem;
 }
 
-#jtform-wrapper .mt-2{
+#jtform-wrapper .mt-2 {
   margin-top: 0.5rem;
 }
 
-#jtform-wrapper .ml-3{
+#jtform-wrapper .ml-3 {
   margin-left: 0.75rem;
 }
 
-#jtform-wrapper .mb-4{
+#jtform-wrapper .mb-4 {
   margin-bottom: 1rem;
 }
 
-#jtform-wrapper .mt-6{
+#jtform-wrapper .mt-6 {
   margin-top: 1.5rem;
 }
 
-#jtform-wrapper .mt-8{
+#jtform-wrapper .mt-8 {
   margin-top: 2rem;
 }
 
-#jtform-wrapper .min-h-screen{
+#jtform-wrapper .min-h-screen {
   min-height: 100vh;
 }
 
-#jtform-wrapper .disabled\\:opacity-50:disabled{
+#jtform-wrapper .disabled\\:opacity-50:disabled {
   opacity: 0.5;
 }
 
-#jtform-wrapper .focus\\:outline-none:focus{
+#jtform-wrapper .focus\\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
 
-#jtform-wrapper .p-4{
+#jtform-wrapper .p-4 {
   padding: 1rem;
 }
 
-#jtform-wrapper .py-2{
+#jtform-wrapper .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
 
-#jtform-wrapper .px-3{
+#jtform-wrapper .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
 }
 
-#jtform-wrapper .px-4{
+#jtform-wrapper .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
-#jtform-wrapper .py-8{
+#jtform-wrapper .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
-#jtform-wrapper .py-12{
+#jtform-wrapper .py-12 {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
-#jtform-wrapper .placeholder-gray-400::-moz-placeholder{
+#jtform-wrapper .placeholder-gray-400::-moz-placeholder {
   --tw-placeholder-opacity: 1;
   color: rgba(156, 163, 175, var(--tw-placeholder-opacity));
 }
 
-#jtform-wrapper .placeholder-gray-400:-ms-input-placeholder{
+#jtform-wrapper .placeholder-gray-400:-ms-input-placeholder {
   --tw-placeholder-opacity: 1;
   color: rgba(156, 163, 175, var(--tw-placeholder-opacity));
 }
 
-#jtform-wrapper .placeholder-gray-400::placeholder{
+#jtform-wrapper .placeholder-gray-400::placeholder {
   --tw-placeholder-opacity: 1;
   color: rgba(156, 163, 175, var(--tw-placeholder-opacity));
 }
 
-*{
+#jtform-wrapper * {
   --tw-shadow: 0 0 #0000;
 }
 
-#jtform-wrapper .shadow-sm{
+#jtform-wrapper .shadow-sm {
   --tw-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-#jtform-wrapper .shadow{
+#jtform-wrapper .shadow {
   --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-*{
+#jtform-wrapper * {
   --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
   --tw-ring-offset-width: 0px;
   --tw-ring-offset-color: #fff;
@@ -642,181 +629,180 @@ svg {
   --tw-ring-shadow: 0 0 #0000;
 }
 
-#jtform-wrapper .focus\\:ring-2:focus{
+#jtform-wrapper .focus\\:ring-2:focus {
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 
-#jtform-wrapper .focus\\:ring-offset-2:focus{
+#jtform-wrapper .focus\\:ring-offset-2:focus {
   --tw-ring-offset-width: 2px;
 }
 
-#jtform-wrapper .focus\\:ring-indigo-500:focus{
+#jtform-wrapper .focus\\:ring-indigo-500:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgba(99, 102, 241, var(--tw-ring-opacity));
 }
 
-#jtform-wrapper .text-center{
+#jtform-wrapper .text-center {
   text-align: center;
 }
 
-#jtform-wrapper .text-white{
+#jtform-wrapper .text-white {
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
-#jtform-wrapper .text-gray-700{
+#jtform-wrapper .text-gray-700 {
   --tw-text-opacity: 1;
   color: rgba(55, 65, 81, var(--tw-text-opacity));
 }
 
-#jtform-wrapper .text-gray-900{
+#jtform-wrapper .text-gray-900 {
   --tw-text-opacity: 1;
   color: rgba(17, 24, 39, var(--tw-text-opacity));
 }
 
-#jtform-wrapper .text-yellow-400{
+#jtform-wrapper .text-yellow-400 {
   --tw-text-opacity: 1;
   color: rgba(251, 191, 36, var(--tw-text-opacity));
 }
 
-#jtform-wrapper .text-yellow-700{
+#jtform-wrapper .text-yellow-700 {
   --tw-text-opacity: 1;
   color: rgba(180, 83, 9, var(--tw-text-opacity));
 }
 
-#jtform-wrapper .text-yellow-800{
+#jtform-wrapper .text-yellow-800 {
   --tw-text-opacity: 1;
   color: rgba(146, 64, 14, var(--tw-text-opacity));
 }
 
-#jtform-wrapper .text-green-400{
+#jtform-wrapper .text-green-400 {
   --tw-text-opacity: 1;
   color: rgba(52, 211, 153, var(--tw-text-opacity));
 }
 
-#jtform-wrapper .text-green-800{
+#jtform-wrapper .text-green-800 {
   --tw-text-opacity: 1;
   color: rgba(6, 95, 70, var(--tw-text-opacity));
 }
 
-#jtform-wrapper .w-5{
+#jtform-wrapper .w-5 {
   width: 1.25rem;
 }
 
-#jtform-wrapper .w-full{
+#jtform-wrapper .w-full {
   width: 100%;
 }
 
-@-webkit-keyframes spin{
-  to{
+@-webkit-keyframes spin {
+  to {
     transform: rotate(360deg);
   }
 }
 
-@keyframes spin{
-  to{
+@keyframes spin {
+  to {
     transform: rotate(360deg);
   }
 }
 
-@-webkit-keyframes ping{
-  75%, 100%{
+@-webkit-keyframes ping {
+  75%, 100% {
     transform: scale(2);
     opacity: 0;
   }
 }
 
-@keyframes ping{
-  75%, 100%{
+@keyframes ping {
+  75%, 100% {
     transform: scale(2);
     opacity: 0;
   }
 }
 
-@-webkit-keyframes pulse{
-  50%{
+@-webkit-keyframes pulse {
+  50% {
     opacity: .5;
   }
 }
 
-@keyframes pulse{
-  50%{
+@keyframes pulse {
+  50% {
     opacity: .5;
   }
 }
 
-@-webkit-keyframes bounce{
-  0%, 100%{
+@-webkit-keyframes bounce {
+  0%, 100% {
     transform: translateY(-25%);
     -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
             animation-timing-function: cubic-bezier(0.8,0,1,1);
   }
 
-  50%{
+  50% {
     transform: none;
     -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
             animation-timing-function: cubic-bezier(0,0,0.2,1);
   }
 }
 
-@keyframes bounce{
-  0%, 100%{
+@keyframes bounce {
+  0%, 100% {
     transform: translateY(-25%);
     -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
             animation-timing-function: cubic-bezier(0.8,0,1,1);
   }
 
-  50%{
+  50% {
     transform: none;
     -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
             animation-timing-function: cubic-bezier(0,0,0.2,1);
   }
 }
 
-@media (min-width: 640px){
-
-  #jtform-wrapper .sm\\:rounded-lg{
+@media (min-width: 640px) {
+  #jtform-wrapper .sm\\:rounded-lg {
     border-radius: 0.5rem;
   }
 
-  #jtform-wrapper .sm\\:text-sm{
+  #jtform-wrapper .sm\\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
   }
 
-  #jtform-wrapper .sm\\:mx-auto{
+  #jtform-wrapper .sm\\:mx-auto {
     margin-left: auto;
     margin-right: auto;
   }
 
-  #jtform-wrapper .sm\\:max-w-md{
+  #jtform-wrapper .sm\\:max-w-md {
     max-width: 28rem;
   }
 
-  #jtform-wrapper .sm\\:px-6{
+  #jtform-wrapper .sm\\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
 
-  #jtform-wrapper .sm\\:px-10{
+  #jtform-wrapper .sm\\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
   }
 
-  #jtform-wrapper .sm\\:w-full{
+  #jtform-wrapper .sm\\:w-full {
     width: 100%;
   }
 }
 
-@media (min-width: 1024px){
-
-  #jtform-wrapper .lg\\:px-8{
+@media (min-width: 1024px) {
+  #jtform-wrapper .lg\\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
   }
-}</style>
+}
+</style>
     <div class="container">
     <div class="sm:mx-auto sm:w-full sm:max-w-md">
         <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
