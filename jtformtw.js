@@ -762,6 +762,17 @@ Add the correct display in Chrome and Safari.
   }
 }
 
+#jtform-wrapper * {
+  font-family: system-ui,
+    -apple-system, /* Firefox supports this but not yet \`system-ui\` */ 'Segoe UI',
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif,
+    'Apple Color Emoji',
+    'Segoe UI Emoji';
+}
+
 @media (min-width: 640px) {
   #jtform-wrapper .sm\\:rounded-lg {
     border-radius: 0.5rem;
