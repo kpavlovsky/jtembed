@@ -7,6 +7,10 @@ function jtForm() {
     }
     var data = JSON.parse(wrapper.dataset.data);
     var holder = document.createElement('div');
+    let fullPageClasses= "";
+    if (data.fullPage) {
+        fullPageClasses= "min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8";
+    }
     holder.innerHTML = `
    <style>
    /*! tailwindcss v2.1.4 | MIT License | https://tailwindcss.com */
@@ -814,7 +818,7 @@ Add the correct display in Chrome and Safari.
   }
 }
 </style>
-    <div class="container">
+    <div class="container ${fullPageClasses}">
     <div class="sm:mx-auto sm:w-full sm:max-w-md">
         <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
             Send a request
