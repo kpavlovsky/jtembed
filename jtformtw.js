@@ -818,7 +818,7 @@ Add the correct display in Chrome and Safari.
   }
 }
 </style>
-    <div class="container ${fullPageClasses}">
+    <div class="${fullPageClasses}">
     <div class="sm:mx-auto sm:w-full sm:max-w-md">
         <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
             Send a request
