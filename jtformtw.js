@@ -800,7 +800,7 @@ Add the correct display in Chrome and Safari.
     <div class="${fullPageClasses}">
 ${heading}
 
-    <div class="mt-8 mb-4 sm:mx-auto sm:w-full sm:max-w-md">
+    <div class="sm:mx-auto sm:w-full sm:max-w-md">
         <div class="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
             <div class="rounded-md bg-yellow-50 p-4 hidden jt-error">
                 <div class="flex">
