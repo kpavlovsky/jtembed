@@ -19,7 +19,7 @@ function jtForm() {
     }
     let heading = ``;
     if (data.showHeading){
-        heading = `    <div class="sm:mx-auto sm:w-full sm:max-w-md">
+        heading = `    <div class="mb-4 sm:mx-auto sm:w-full sm:max-w-md">
         <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
             Send a request
         </h2>
