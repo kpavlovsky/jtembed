@@ -14,7 +14,7 @@ function jtForm() {
     let backLink = '';
     if (data.displayBacklink) {
         backLink =`<div class="text-center mt-2 text-gray-900 text-sm">
-                Made with <a href="https://jobtable.com/" target="_blank" rel="noopener">Jobtable.com</a>
+                Made with <a href="https://www.jobtable.com/" target="_blank" rel="noopener">Jobtable.com</a>
             </div>`;
     }
     let heading = ``;
