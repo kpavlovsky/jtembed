@@ -232,7 +232,7 @@ Add the correct display in Chrome and Safari.
  * Removes the default spacing and border for appropriate elements.
  */
 
-#jtform-wrapper h2, #jtform-wrapper h3, #jtform-wrapper p {
+#jtform-wrapper h3, #jtform-wrapper p {
   margin: 0;
 }
 
@@ -343,7 +343,7 @@ Add the correct display in Chrome and Safari.
   cursor: pointer;
 }
 
-#jtform-wrapper h2, #jtform-wrapper h3 {
+#jtform-wrapper h3 {
   font-size: inherit;
   font-weight: inherit;
 }
@@ -400,194 +400,173 @@ Add the correct display in Chrome and Safari.
  */
 
 #jtform-wrapper .space-y-6 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+  --tw-space-y-reverse: 0 !important;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse))) !important;
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse)) !important;
 }
 
 #jtform-wrapper .appearance-none {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -webkit-appearance: none !important;
+     -moz-appearance: none !important;
+          appearance: none !important;
 }
 
 #jtform-wrapper .bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  --tw-bg-opacity: 1 !important;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity)) !important;
 }
 
 #jtform-wrapper .bg-gray-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgba(249, 250, 251, var(--tw-bg-opacity));
+  --tw-bg-opacity: 1 !important;
+  background-color: rgba(249, 250, 251, var(--tw-bg-opacity)) !important;
 }
 
 #jtform-wrapper .bg-yellow-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgba(255, 251, 235, var(--tw-bg-opacity));
+  --tw-bg-opacity: 1 !important;
+  background-color: rgba(255, 251, 235, var(--tw-bg-opacity)) !important;
 }
 
 #jtform-wrapper .bg-green-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgba(236, 253, 245, var(--tw-bg-opacity));
+  --tw-bg-opacity: 1 !important;
+  background-color: rgba(236, 253, 245, var(--tw-bg-opacity)) !important;
 }
 
 #jtform-wrapper .bg-indigo-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgba(79, 70, 229, var(--tw-bg-opacity));
+  --tw-bg-opacity: 1 !important;
+  background-color: rgba(79, 70, 229, var(--tw-bg-opacity)) !important;
 }
 
 #jtform-wrapper .hover\\:bg-indigo-700:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgba(67, 56, 202, var(--tw-bg-opacity));
+  --tw-bg-opacity: 1 !important;
+  background-color: rgba(67, 56, 202, var(--tw-bg-opacity)) !important;
 }
 
 #jtform-wrapper .border-transparent {
-  border-color: transparent;
+  border-color: transparent !important;
 }
 
 #jtform-wrapper .border-gray-300 {
-  --tw-border-opacity: 1;
-  border-color: rgba(209, 213, 219, var(--tw-border-opacity));
+  --tw-border-opacity: 1 !important;
+  border-color: rgba(209, 213, 219, var(--tw-border-opacity)) !important;
 }
 
 #jtform-wrapper .focus\\:border-indigo-500:focus {
-  --tw-border-opacity: 1;
-  border-color: rgba(99, 102, 241, var(--tw-border-opacity));
+  --tw-border-opacity: 1 !important;
+  border-color: rgba(99, 102, 241, var(--tw-border-opacity)) !important;
 }
 
 #jtform-wrapper .rounded-md {
-  border-radius: 0.375rem;
+  border-radius: 0.375rem !important;
 }
 
 #jtform-wrapper .border {
-  border-width: 1px;
+  border-width: 1px !important;
 }
 
 #jtform-wrapper .block {
-  display: block;
+  display: block !important;
 }
 
 #jtform-wrapper .flex {
-  display: flex;
+  display: flex !important;
 }
 
 #jtform-wrapper .hidden {
-  display: none;
+  display: none !important;
 }
 
 #jtform-wrapper .flex-col {
-  flex-direction: column;
+  flex-direction: column !important;
 }
 
 #jtform-wrapper .justify-center {
-  justify-content: center;
+  justify-content: center !important;
 }
 
 #jtform-wrapper .flex-shrink-0 {
-  flex-shrink: 0;
+  flex-shrink: 0 !important;
 }
 
 #jtform-wrapper .font-medium {
-  font-weight: 500;
-}
-
-#jtform-wrapper .font-extrabold {
-  font-weight: 800;
+  font-weight: 500 !important;
 }
 
 #jtform-wrapper .h-5 {
-  height: 1.25rem;
+  height: 1.25rem !important;
 }
 
 #jtform-wrapper .text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
-#jtform-wrapper .text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+  font-size: 0.875rem !important;
+  line-height: 1.25rem !important;
 }
 
 #jtform-wrapper .mt-1 {
-  margin-top: 0.25rem;
+  margin-top: 0.25rem !important;
 }
 
 #jtform-wrapper .mt-2 {
-  margin-top: 0.5rem;
+  margin-top: 0.5rem !important;
 }
 
 #jtform-wrapper .ml-3 {
-  margin-left: 0.75rem;
-}
-
-#jtform-wrapper .mb-4 {
-  margin-bottom: 1rem;
-}
-
-#jtform-wrapper .mt-6 {
-  margin-top: 1.5rem;
-}
-
-#jtform-wrapper .mt-8 {
-  margin-top: 2rem;
+  margin-left: 0.75rem !important;
 }
 
 #jtform-wrapper .min-h-screen {
-  min-height: 100vh;
+  min-height: 100vh !important;
 }
 
 #jtform-wrapper .disabled\\:opacity-50:disabled {
-  opacity: 0.5;
+  opacity: 0.5 !important;
 }
 
 #jtform-wrapper .focus\\:outline-none:focus {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
+  outline: 2px solid transparent !important;
+  outline-offset: 2px !important;
 }
 
 #jtform-wrapper .p-4 {
-  padding: 1rem;
+  padding: 1rem !important;
 }
 
 #jtform-wrapper .py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
 }
 
 #jtform-wrapper .px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
+  padding-left: 0.75rem !important;
+  padding-right: 0.75rem !important;
 }
 
 #jtform-wrapper .px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
 }
 
 #jtform-wrapper .py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
 }
 
 #jtform-wrapper .py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
 }
 
 #jtform-wrapper .placeholder-gray-400::-moz-placeholder {
-  --tw-placeholder-opacity: 1;
-  color: rgba(156, 163, 175, var(--tw-placeholder-opacity));
+  --tw-placeholder-opacity: 1 !important;
+  color: rgba(156, 163, 175, var(--tw-placeholder-opacity)) !important;
 }
 
 #jtform-wrapper .placeholder-gray-400:-ms-input-placeholder {
-  --tw-placeholder-opacity: 1;
-  color: rgba(156, 163, 175, var(--tw-placeholder-opacity));
+  --tw-placeholder-opacity: 1 !important;
+  color: rgba(156, 163, 175, var(--tw-placeholder-opacity)) !important;
 }
 
 #jtform-wrapper .placeholder-gray-400::placeholder {
-  --tw-placeholder-opacity: 1;
-  color: rgba(156, 163, 175, var(--tw-placeholder-opacity));
+  --tw-placeholder-opacity: 1 !important;
+  color: rgba(156, 163, 175, var(--tw-placeholder-opacity)) !important;
 }
 
 #jtform-wrapper * {
@@ -595,13 +574,13 @@ Add the correct display in Chrome and Safari.
 }
 
 #jtform-wrapper .shadow-sm {
-  --tw-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  --tw-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
 }
 
 #jtform-wrapper .shadow {
-  --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06) !important;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
 }
 
 #jtform-wrapper * {
@@ -614,70 +593,70 @@ Add the correct display in Chrome and Safari.
 }
 
 #jtform-wrapper .focus\\:ring-2:focus {
-  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color) !important;
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color) !important;
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000) !important;
 }
 
 #jtform-wrapper .focus\\:ring-offset-2:focus {
-  --tw-ring-offset-width: 2px;
+  --tw-ring-offset-width: 2px !important;
 }
 
 #jtform-wrapper .focus\\:ring-indigo-500:focus {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgba(99, 102, 241, var(--tw-ring-opacity));
+  --tw-ring-opacity: 1 !important;
+  --tw-ring-color: rgba(99, 102, 241, var(--tw-ring-opacity)) !important;
 }
 
 #jtform-wrapper .text-center {
-  text-align: center;
+  text-align: center !important;
 }
 
 #jtform-wrapper .text-white {
-  --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  --tw-text-opacity: 1 !important;
+  color: rgba(255, 255, 255, var(--tw-text-opacity)) !important;
 }
 
 #jtform-wrapper .text-gray-700 {
-  --tw-text-opacity: 1;
-  color: rgba(55, 65, 81, var(--tw-text-opacity));
+  --tw-text-opacity: 1 !important;
+  color: rgba(55, 65, 81, var(--tw-text-opacity)) !important;
 }
 
 #jtform-wrapper .text-gray-900 {
-  --tw-text-opacity: 1;
-  color: rgba(17, 24, 39, var(--tw-text-opacity));
+  --tw-text-opacity: 1 !important;
+  color: rgba(17, 24, 39, var(--tw-text-opacity)) !important;
 }
 
 #jtform-wrapper .text-yellow-400 {
-  --tw-text-opacity: 1;
-  color: rgba(251, 191, 36, var(--tw-text-opacity));
+  --tw-text-opacity: 1 !important;
+  color: rgba(251, 191, 36, var(--tw-text-opacity)) !important;
 }
 
 #jtform-wrapper .text-yellow-700 {
-  --tw-text-opacity: 1;
-  color: rgba(180, 83, 9, var(--tw-text-opacity));
+  --tw-text-opacity: 1 !important;
+  color: rgba(180, 83, 9, var(--tw-text-opacity)) !important;
 }
 
 #jtform-wrapper .text-yellow-800 {
-  --tw-text-opacity: 1;
-  color: rgba(146, 64, 14, var(--tw-text-opacity));
+  --tw-text-opacity: 1 !important;
+  color: rgba(146, 64, 14, var(--tw-text-opacity)) !important;
 }
 
 #jtform-wrapper .text-green-400 {
-  --tw-text-opacity: 1;
-  color: rgba(52, 211, 153, var(--tw-text-opacity));
+  --tw-text-opacity: 1 !important;
+  color: rgba(52, 211, 153, var(--tw-text-opacity)) !important;
 }
 
 #jtform-wrapper .text-green-800 {
-  --tw-text-opacity: 1;
-  color: rgba(6, 95, 70, var(--tw-text-opacity));
+  --tw-text-opacity: 1 !important;
+  color: rgba(6, 95, 70, var(--tw-text-opacity)) !important;
 }
 
 #jtform-wrapper .w-5 {
-  width: 1.25rem;
+  width: 1.25rem !important;
 }
 
 #jtform-wrapper .w-full {
-  width: 100%;
+  width: 100% !important;
 }
 
 @-webkit-keyframes spin {
@@ -759,42 +738,42 @@ Add the correct display in Chrome and Safari.
 
 @media (min-width: 640px) {
   #jtform-wrapper .sm\\:rounded-lg {
-    border-radius: 0.5rem;
+    border-radius: 0.5rem !important;
   }
 
   #jtform-wrapper .sm\\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
+    font-size: 0.875rem !important;
+    line-height: 1.25rem !important;
   }
 
   #jtform-wrapper .sm\\:mx-auto {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 
   #jtform-wrapper .sm\\:max-w-md {
-    max-width: 28rem;
+    max-width: 28rem !important;
   }
 
   #jtform-wrapper .sm\\:px-6 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
   }
 
   #jtform-wrapper .sm\\:px-10 {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+    padding-left: 2.5rem !important;
+    padding-right: 2.5rem !important;
   }
 
   #jtform-wrapper .sm\\:w-full {
-    width: 100%;
+    width: 100% !important;
   }
 }
 
 @media (min-width: 1024px) {
   #jtform-wrapper .lg\\:px-8 {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
   }
 }</style>
     <div class="${fullPageClasses}">
