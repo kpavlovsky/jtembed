@@ -18,8 +18,7 @@ function jtForm() {
             </div>`;
     }
     holder.innerHTML = `
-   <style>
-   /*! tailwindcss v2.1.4 | MIT License | https://tailwindcss.com */
+   <style>/*! tailwindcss v2.1.4 | MIT License | https://tailwindcss.com */
 
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
@@ -390,40 +389,6 @@ Add the correct display in Chrome and Safari.
  *
  * https://github.com/mozdevs/cssremedy/issues/14
  */
-
-#jtform-wrapper .container {
-  width: 100%;
-}
-
-@media (min-width: 640px) {
-  #jtform-wrapper .container {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  #jtform-wrapper .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  #jtform-wrapper .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  #jtform-wrapper .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  #jtform-wrapper .container {
-    max-width: 1536px;
-  }
-}
 
 #jtform-wrapper .space-y-6 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
@@ -822,8 +787,7 @@ Add the correct display in Chrome and Safari.
     padding-left: 2rem;
     padding-right: 2rem;
   }
-}
-</style>
+}</style>
     <div class="${fullPageClasses}">
     <div class="sm:mx-auto sm:w-full sm:max-w-md">
         <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
