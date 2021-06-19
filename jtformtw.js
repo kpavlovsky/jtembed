@@ -7,9 +7,15 @@ function jtForm() {
     }
     var data = JSON.parse(wrapper.dataset.data);
     var holder = document.createElement('div');
-    let fullPageClasses= "";
+    let fullPageClasses = "";
     if (data.fullPage) {
-        fullPageClasses= "min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8";
+        fullPageClasses = "min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8";
+    }
+    let backLink = '';
+    if (data.displayBacklink) {
+        backLink =`<div class="text-center mt-2 text-gray-900 text-sm">
+                Made with <a href="https://jobtable.com/" target="_blank" rel="noopener">Jobtable.com</a>
+            </div>`;
     }
     holder.innerHTML = `
    <style>
@@ -934,7 +940,7 @@ Add the correct display in Chrome and Safari.
             </form>
 
         </div>
-
+            ${backLink}
     </div>
     </div>
     `;
