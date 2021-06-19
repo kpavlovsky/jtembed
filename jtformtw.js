@@ -14,7 +14,7 @@ function jtForm() {
     let backLink = '';
     if (data.displayBacklink) {
         backLink =`<div class="text-center mt-2 text-gray-900 text-sm">
-                Made with <a href="https://jobtable.com/" target="_blank" rel="noopener">Jobtable.com</a>
+                Made with <a href="https://www.jobtable.com/" target="_blank" rel="noopener">Jobtable.com</a>
             </div>`;
     }
     holder.innerHTML = `
@@ -789,13 +789,6 @@ Add the correct display in Chrome and Safari.
   }
 }</style>
     <div class="${fullPageClasses}">
-    <div class="sm:mx-auto sm:w-full sm:max-w-md">
-        <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
-            Send a request
-        </h2>
-
-    </div>
-
     <div class="mt-8 mb-4 sm:mx-auto sm:w-full sm:max-w-md">
         <div class="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
             <div class="rounded-md bg-yellow-50 p-4 hidden jt-error">
